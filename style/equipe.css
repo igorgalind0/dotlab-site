@@ -1,0 +1,105 @@
+.equipe-bg {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    background-color: var(--cor-principal);
+    background-image: url('../img/banners/banner-equipe.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    margin-top: 100px;
+}
+
+.equipe {
+    position: relative;
+    top: 200px;
+    padding-bottom: 200px;
+}
+
+.equipe h1 {
+    font-size: 2rem;
+    color: #fff;
+    width: 40ch;
+}
+
+.equipe p {
+    font-size: 1.25rem;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.equipe-dotlab,
+.pesq-parceiros {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.equipe-dotlab li,
+.pesq-parceiros li {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    padding-bottom: 40px;
+}
+
+.equipe-dotlab li > img,
+.pesq-parceiros li > img {
+    width: 100%;
+    display: block;
+}
+
+.equipe-dotlab li h2,
+.pesq-parceiros li h2 {
+    font-size: 1.25rem;
+    padding: 0 20px;
+    color: var(--cor-principal);
+    margin-top: 10px;
+}
+
+.equipe-dotlab li p,
+.pesq-parceiros li p {
+    font-size: 1rem;
+    color: var(--cor-secundaria);
+    padding: 0px 20px;
+    margin-top: 5px;
+}
+
+.equipe-dotlab li > div,
+.pesq-parceiros li > div {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+    padding: 0 20px;
+}
+
+.equipe-dotlab li > div a,
+.pesq-parceiros li > div a {
+    background: #FF8181;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.equipe-dotlab li > div a:hover,
+.pesq-parceiros li > div a:hover {
+    background: #ff4747;
+    transition: .2s;
+}
+
+.pesquisadores h1 {
+    font-size: 2rem;
+    color: var(--cor-principal);
+    margin-top: 50px;
+}
+
+.pesquisadores p {
+    font-size: 1.25rem;
+    color: var(--cor-secundaria);
+}

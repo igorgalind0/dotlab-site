@@ -12,6 +12,7 @@
 .lista-proj.dashboards a {
     border: none;
     background: var(--cor-a);
+    border: 3px solid var(--cor-a);
 }
 
 .lista-proj.dashboards li.ativa a {

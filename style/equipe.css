@@ -17,10 +17,9 @@
     padding-bottom: 200px;
 }
 
-.equipe h1 {
+.dotlab h1 {
     font-size: 2rem;
     color: #fff;
-    width: 40ch;
 }
 
 .equipe p {
@@ -102,4 +101,39 @@
 .pesquisadores p {
     font-size: 1.25rem;
     color: var(--cor-secundaria);
+}
+
+@media (max-width: 900px) {
+    .equipe-dotlab,
+    .pesq-parceiros {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 800px) {
+    .equipe h1 {
+        font-size: 1.5rem;
+    }
+
+    .equipe p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .equipe-dotlab li h2,
+    .pesq-parceiros li h2 {
+        font-size: 1rem;
+    }
+    .equipe-dotlab li p,
+    .pesq-parceiros li p {
+        font-size: .875rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .equipe-dotlab,
+    .pesq-parceiros {
+        grid-template-columns: 1fr;
+    }
 }

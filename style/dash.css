@@ -1,0 +1,58 @@
+.dash h1 {
+    font-size: 2rem;
+    color: var(--cor-principal);
+    margin-top: 50px;
+}
+
+.dash p {
+    font-size: 1.25rem;
+    margin-top: 20px;
+}
+
+.lista-proj.dashboards a {
+    border: none;
+    background: var(--cor-a);
+}
+
+.lista-proj.dashboards li.ativa a {
+    background: none !important;
+}
+
+.lista-proj .dash01 {
+    background-image: url('../img//pagina-projetos/dash/dash01.png');
+    border-bottom-color: #B1488A;
+}
+
+.lista-proj .dash02 {
+    background-image: url('../img//pagina-projetos/dash/dash02.png');
+    border-bottom-color: #6D349D;
+}
+
+.lista-proj .dash03 {
+    background-image: url('../img//pagina-projetos/dash/dash03.png');
+    border-bottom-color: #3EB7A0;
+}
+
+.lista-proj .dash04 {
+    background-image: url('../img//pagina-projetos/dash/dash04.png');
+    border-bottom-color: #043241;
+}
+.lista-proj .dash05 {
+    background-image: url('../img//pagina-projetos/dash/dash05.png');
+    border-bottom-color: #007B55;
+}
+
+.lista-proj .dash06 {
+    background-image: url('../img//pagina-projetos/dash/dash06.png');
+    border-bottom-color: #08A696;
+}
+
+@media (max-width: 800px) {
+    .dash h1 {
+        font-size: 1.5rem;
+    }
+
+    .dash p {
+        font-size: 1rem;
+    }
+}

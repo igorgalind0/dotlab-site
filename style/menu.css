@@ -1,0 +1,38 @@
+.menu {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu-list a {
+    color: var(--cor-secundaria);
+    font-weight: 500;
+}
+
+.menu-list a:hover{
+    transition: .2s;
+    color: var(--cor-principal);
+    position: relative;
+}
+
+.menu-list a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 103%;
+  height: 3px;
+  background-color: var(--cor-principal);
+  transform: scaleX(0);
+  transition: transform ease 0.3s;
+}
+
+.menu-list a:hover::after {
+  transform: scaleX(1);
+}

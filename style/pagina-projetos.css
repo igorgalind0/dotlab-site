@@ -1,0 +1,199 @@
+.projetos-bg {
+    background-color: var(--cor-principal);
+    background-image: url('../img/banners/banner-pagina-projetos.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0 0;
+    margin-top: 100px;
+    box-shadow: inset 0 -100px 0 #fff;
+}
+
+.pagina-projetos h1 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.pagina-projetos p {
+    font-size: 1.25rem;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.lista-proj{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.lista-proj.principal {
+    margin-top: 50px;
+}
+
+.lista-proj.secundaria {
+    margin-top: 30px;
+}
+
+.lista-proj li {
+    position: relative;
+    border-bottom-width: 15px;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+}
+.lista-proj li a {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 3px solid;
+    border-radius: 50%;
+    padding: 10px;
+
+    z-index: 200;
+
+    transition: transform 0.4s ease;
+}
+
+.lista-proj p {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+
+    background-color: var(--cor);
+    padding: 20px;
+    font-size: 1rem;
+
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.4s ease, opacity 0.4s ease, height 0.4s ease;
+}
+
+.lista-proj li.ativa p {
+    transform: translateY(0);
+    opacity: 1;
+    height: 50%;
+}
+
+.lista-proj li.ativa a {
+    transition: .4s;
+    background: #fff;
+}
+
+.lista-proj li a img {
+    width: 20px;
+    height: auto;
+}
+
+@media (max-width: 1000px) {
+    .lista-proj li.ativa p {
+        height: 80%;
+    }
+}
+
+@media (max-width: 800px) {
+    .pagina-projetos h1 {
+        font-size: 1.5rem;
+    }
+
+    .pagina-projetos p {
+        font-size: 1rem;
+    }
+
+    .lista-proj li a {
+        transform: scale(0.7);
+    }
+}
+
+@media (max-width: 700px) {
+    .lista-proj {
+        grid-template-columns: 1fr;
+    }
+
+    .lista-proj li.ativa p {
+        height: 60%;
+    }
+}
+
+@media (max-width: 400px) {
+    .lista-proj li.ativa p {
+        font-size: .875rem;
+        height: 70%;
+    }
+}
+
+@keyframes subirOverlay {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Configurando projetos individualmente */ 
+
+.lista-proj .projeto-angels {
+    background-image: url('../img/pagina-projetos/angels.png');
+    border-bottom-color: #B1488A;
+}
+
+.lista-proj .projeto-angels a {
+    border-color: #B1488A;
+}
+
+.lista-proj .projeto-hansenai {
+    background-image: url('../img/pagina-projetos/hansenai.png');
+    border-bottom-color: #6D349D;
+}
+
+.lista-proj .projeto-hansenai a {
+    border-color: #6D349D;
+}
+
+.lista-proj .projeto-valeria {
+    background-image: url('../img/pagina-projetos/valeria.png');
+    border-bottom-color: #3EB7A0;
+}
+
+.lista-proj .projeto-valeria a {
+    border-color: #3EB7A0;
+}
+
+.lista-proj .projeto-iara {
+    background-image: url('../img/pagina-projetos/iara.png');
+    border-bottom-color: #8C0738;
+}
+
+.lista-proj .projeto-iara a {
+    border-color: #8C0738;
+}
+
+.lista-proj .projeto-tito {
+    background-image: url('../img/pagina-projetos/tito.png');
+    border-bottom-color: #411310;
+}
+
+.lista-proj .projeto-tito a {
+    border-color: #411310;
+}

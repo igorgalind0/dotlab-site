@@ -1,0 +1,35 @@
+.parceiros {
+    margin-top: 50px;
+}
+
+.parceiros h1 {
+    font-size: 2rem;
+    color: var(--cor-principal);
+}
+
+.parceiros p {
+    font-size: 1.25rem;
+    color: var(--cor-secundaria);
+    margin-top: 20px;
+}
+
+.parceiros-lista {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+@media (max-width: 800px) {
+    .parceiros h1 {
+        font-size: 1.5rem;
+    }
+
+    .parceiros p {
+        font-size: 1rem;
+    }
+
+    .parceiros-lista {
+        gap: 20px;
+    }
+}

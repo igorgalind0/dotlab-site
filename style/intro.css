@@ -1,0 +1,65 @@
+.intro-bg {
+    background-color: var(--cor-principal);
+    background-image: url('../img/banners/banner-menu.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    margin-top: 100px;
+}
+
+.intro {
+    margin-top: 20px;
+}
+
+.intro h1 {
+    font-size: 2rem;
+    color: #fff;
+    max-width: 30ch;
+}
+
+.intro p {
+    font-size: 1.25rem;
+    color: #fff;
+    margin-top: 30px;
+    max-width: 40ch;
+}
+
+.intro a {
+    color: #fff;
+    display: inline-block;
+    margin-top: 30px;
+    border: 3px solid #fff;
+    padding: 15px 50px;
+    border-radius: 50px;
+    font-size: 1.25rem;
+    cursor: auto;
+    font-weight: bold;
+
+    animation: flutuar 2.5s ease-in-out infinite;
+}
+
+.intro a::after {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background: url('../img/icons/arrow-icon.svg') no-repeat center center;
+    background-size: contain;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+@media (max-width: 800px) {
+    .intro h1 {
+        font-size: 1.5rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+    }
+
+    .intro a {
+        font-size: 1rem;
+    }
+}

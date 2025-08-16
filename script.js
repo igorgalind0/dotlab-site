@@ -9,3 +9,10 @@ cards.forEach((item) => {
         item.classList.remove('ativa');
     });
 });
+
+const menuMobile = document.querySelector("[data-menu='button'");
+const ulMenu = document.querySelector("[data-menu='menu-list'");
+
+menuMobile.addEventListener('click', () => {
+    ulMenu.classList.toggle('ativo');
+});

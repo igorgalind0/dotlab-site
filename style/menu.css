@@ -1,27 +1,28 @@
 .menu {
-    margin-top: 50px;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.menu-list {
-    display: flex;
-    align-items: center;
-    gap: 30px;
+[data-menu='menu-list'] {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
-.menu-list a {
-    color: var(--cor-secundaria);
-    font-weight: 500;
+[data-menu='menu-list'] a {
+  color: var(--cor-secundaria);
+  font-weight: 500;
 }
 
-.menu-list a:hover{
-    transition: .2s;
-    color: var(--cor-principal);
-    position: relative;
+[data-menu='menu-list'] a:hover{
+  transition: .2s;
+  color: var(--cor-principal);
+  position: relative;
 }
 
-.menu-list a::after {
+[data-menu='menu-list'] a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -33,6 +34,94 @@
   transition: transform ease 0.3s;
 }
 
-.menu-list a:hover::after {
+[data-menu='menu-list'] a:hover::after {
   transform: scaleX(1);
+}
+
+[data-menu='button'] {
+    display: none;
+}
+
+@media (max-width: 550px) {
+  [data-menu="button"] {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: var(--cor-principal);
+    border: none;
+    z-index: 300;
+    cursor: pointer;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+  }
+
+  [data-menu="button"]:hover {
+    transition: .2s;
+    background: #921414;
+  }
+
+  [data-menu="button"]::before {
+    margin-right: 4px;
+    content: '';
+    display: inline-block;
+    height: 2px;
+    width: 12px;
+    background: #fff;
+    box-shadow: 0 4px #fff, 0 -4px #fff;
+  }
+
+  [data-menu="menu-list"].ativo {
+    display: block !important;
+    position: absolute;
+    background: #921414;
+    padding: 35px;
+    top: 135px;
+    right: 20px;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+    animation: slideDown 0.3s ease-out;
+    text-align: left;
+    width: 100px;
+}
+
+  [data-menu="menu-list"].ativo::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #921414;
+  }   
+
+  [data-menu="menu-list"].ativo li a{
+    color: #fff;
+  }
+
+  [data-menu="menu-list"].ativo li {
+    margin-top: 8px;
+  }
+
+  [data-menu='menu-list'] {
+    display: none !important;
+  }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

@@ -10,13 +10,14 @@
 <body>
     <header>
         <nav class="menu container">
-            <div><img src="./img/logo-dotlab.png" alt="logotipo dotlab Brazil"></div>
+            <a href="./index.html"><div><img src="./img/logo-dotlab.png" alt="logotipo dotlab Brazil"></div></a>
+            
             <button data-menu="button" aria-expanded="false" aria-controls="menu"></button>
             <ul data-menu="menu-list">
                 <li><a href="./index.html">Início</a></li>
                 <li><a href="./equipe.html">Equipe</a></li>
                 <li><a href="./projetos.html">Projetos</a></li>
-                <li><a href="#parcerias">Parcerias</a></li>
+                <li><a href="./index.html#parcerias">Parcerias</a></li>
             </ul>
         </nav>
     </header>
@@ -27,7 +28,7 @@
 
             <p>Grupo de pesquisa interinstitucional com foco em Doenças Tropicais Negligenciadas.</p>
 
-            <a href="#">Conheça o Dotlab</a>
+            <a href="#">Conheça o dotLAB</a>
         </main>
     </div>
 
@@ -41,13 +42,13 @@
                 <div>
                     <p>Predição do risco de óbito fetal ao longo do acompanhamento pré-natal contínuo, utilizando dados clínicos e modelos preditivos.</p>
 
-                    <a href="#">Conhecer solução</a>
+                    <a href="http://angels.dotlabbrazil.com.br/" target="_blank">Conhecer solução</a>
                 </div>
             </li>
             <li>
                 <div><img src="./img/logotipos/logo-sophia.png" alt=""></div>
                 <div>
-                    <p>Predição do risco de óbito fetal ao longo do acompanhamento pré-natal contínuo, utilizando dados clínicos e modelos preditivos.</p>
+                    <p>Uso de IA para predição de doenças, condições clínicas e mortalidade neonatal com dados de um hospital público ou referência em Pernambuco</p>
 
                     <a href="#">Conhecer solução</a>
                 </div>
@@ -57,7 +58,7 @@
                 <div>
                     <p>Predição e monitoramento inteligente da resposta ao tratamento da hanseníase, com base em dados clínicos e históricos do paciente.</p>
 
-                    <a href="#">Conhecer solução</a>
+                    <a href="https://hansen.dotlabbrazil.com.br/" target="_blank">Conhecer solução</a>
                 </div>
             </li>
             <li>
@@ -65,7 +66,7 @@
                 <div>
                     <p>Identificação precoce e automatizada de arboviroses por meio de técnicas de inteligência artificial aplicadas a dados clínicos e epidemiológicos.</p>
 
-                    <a href="#">Conhecer solução</a>
+                    <a href="https://valeria.dotlabbrazil.com.br/" target="_blank">Conhecer solução</a>
                 </div>
             </li>
             <li>
@@ -73,7 +74,7 @@
                 <div>
                     <p>Aplicação de técnicas de machine learning para vigilância ativa e preditiva da malária, com base em dados epidemiológicos e ambientais.</p>
 
-                    <a href="#">Conhecer solução</a>
+                    <a href="http://iara-dotlab.com.br/" target="_blank">Conhecer solução</a>
                 </div>
             </li>
             <li>
@@ -81,7 +82,7 @@
                 <div>
                     <p>Prognóstico inteligente e antecipado de casos de tuberculose, utilizando modelos preditivos baseados em inteligência artificial e dados clínicos.</p>
 
-                    <a href="#">Conhecer solução</a>
+                    <a href="https://tito.deeptub.app/" target="_blank">Conhecer solução</a>
                 </div>
             </li>
             <li id="dash">
@@ -91,12 +92,13 @@
                 </div>
 
                 <ul class="lista-dash">
-                    <li><a href="#">Dashboard Angels</a></li>
-                    <li><a href="#">Dashboard Hansen.ai</a></li>
-                    <li><a href="#">Dashboard Zika</a></li>
-                    <li><a href="#">Dashboard IAra</a></li>
-                    <li><a href="#">Dashboard HSG</a></li>
-                    <li><a href="#">Dashboard Chika</a></li>
+                    <li><a href="http://dashangels.dotlabbrazil.com.br" target="_blank">Dashboard Angels</a></li>
+                    <li><a href="http://dashhansen.dotlabbrazil.com.br" target="_blank">Dashboard Hansen.ai</a></li>
+                    <li><a href="http://dashzika.dotlabbrazil.com.br" target="_blank">Dashboard Zika</a></li>
+                    <li><a href="http://dashiara.dotlabbrazil.com.br" target="_blank">Dashboard IAra</a></li>
+                    <li><a href="http://dashsg.dotlabbrazil.com.br" target="_blank">Dashboard HSG</a></li>
+                    <li><a href="http://dashchika.dotlabbrazil.com.br" target="_blank">Dashboard Chika</a></li>
+                    <li><a href="http://dashsophia.dotlabbrazil.com.br" target="_blank">Dashboard SophIA</a></li>
                 </ul>
             </li>
         </ul>
@@ -167,21 +169,33 @@
         </section>
     </div>
 
-    <section class="parceiros container">
+    <section class="parceiros container" id="parcerias">
         <h1>Conexões que impulsionam a ciência</h1>
         <p>O dotLAB Brasil colabora com instituições que compartilham o compromisso com inovação científica e impacto social, fortalecendo projetos e ampliando nosso alcance na saúde pública.</p>
 
-        <ul class="parceiros-lista">
-            <li>
-                <div><img src="./img/parceiros/upe.png" alt="Logotipo UPE"></div>
-            </li>
-            <li>
-                <div><img src="./img/parceiros/comp.png" alt="Logotipo UPE"></div>
-            </li>
-            <li>
-                <div><img src="./img/parceiros/ufpe.png" alt="Logotipo UPE"></div>
-            </li>
+        <div class="lista">
+            <ul class="parceiros-lista" id="image-list">
+            <li><div><img src="./img/parceiros/upe.png" alt="Logotipo UPE"></div></li>
+            <li><div><img src="./img/parceiros/comp.png" alt="Logotipo COMP"></div></li>
+            <li><div><img src="./img/parceiros/ufpe.png" alt="Logotipo UFPE"></div></li>
+            <li><div><img src="./img/parceiros/favip.png" alt="Logotipo FAVIP"></div></li>
+            <li><div><img src="./img/parceiros/facepe.png" alt="Logotipo FACEPE"></div></li>
+            <li><div><img src="./img/parceiros/cnpq.png" alt="Logotipo CNPQ"></div></li>            <li><div><img src="./img/parceiros/ufrn.png" alt="Logotipo UFRN"></div></li>
+            <li><div><img src="./img/parceiros/ufpb.svg" alt="Logotipo UFPB"></div></li>            <li><div><img src="./img/parceiros/ifpe.png" alt="Logotipo IFPE"></div></li>
+            <li><div><img src="./img/parceiros/fmt.jpg" alt="Logotipo FMT"></div></li>            <li><div><img src="./img/parceiros/itps.png" alt="Logotipo ITPS"></div></li>
+            <li><div><img src="./img/parceiros/uea.png" alt="Logotipo UEA"></div></li>            <li><div><img src="./img/parceiros/cdu.png" alt="Logotipo DCU"></div></li>
+
+            <li><div><img src="./img/parceiros/upe.png" alt="Logotipo UPE"></div></li>
+            <li><div><img src="./img/parceiros/comp.png" alt="Logotipo COMP"></div></li>
+            <li><div><img src="./img/parceiros/ufpe.png" alt="Logotipo UFPE"></div></li>
+            <li><div><img src="./img/parceiros/favip.png" alt="Logotipo FAVIP"></div></li>
+            <li><div><img src="./img/parceiros/facepe.png" alt="Logotipo FACEPE"></div></li>
+            <li><div><img src="./img/parceiros/cnpq.png" alt="Logotipo CNPQ"></div></li>            <li><div><img src="./img/parceiros/ufrn.png" alt="Logotipo UFRN"></div></li>
+            <li><div><img src="./img/parceiros/ufpb.svg" alt="Logotipo UFPB"></div></li>            <li><div><img src="./img/parceiros/ifpe.png" alt="Logotipo IFPE"></div></li>
+            <li><div><img src="./img/parceiros/fmt.jpg" alt="Logotipo FMT"></div></li>            <li><div><img src="./img/parceiros/itps.png" alt="Logotipo ITPS"></div></li>
+            <li><div><img src="./img/parceiros/uea.png" alt="Logotipo UEA"></div></li>            <li><div><img src="./img/parceiros/cdu.png" alt="Logotipo DCU"></div></li>
         </ul>
+        </div>
     </section>
 
     <div class="footer-bg">
@@ -194,11 +208,11 @@
                     <ul class="lista-contatos">
                         <li>
                             <div><img src="./img/icons/email.svg" alt=""></div>
-                            <a>contato@dotlabbrazil.com.br</a>
+                            <a href="mailto:contato@dotlabbrazil.com.br">contato@dotlabbrazil.com.br</a>
                         </li>
                         <li>
                             <div><img src="./img/icons/instagram.svg" alt=""></div>
-                            <a>@dotlabbrazil</a>
+                            <a href="https://www.instagram.com/dotlabbrazil/" target="_blank">@dotlabbrazil</a>
                         </li>
                     </ul>
                 </div>

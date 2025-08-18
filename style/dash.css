@@ -48,6 +48,11 @@
     border-bottom-color: #08A696;
 }
 
+.lista-proj .dash07 {
+    background-image: url('../img//pagina-projetos/dash/dash07.png');
+    border-bottom-color: #C19FFF;
+}
+
 @media (max-width: 800px) {
     .dash h1 {
         font-size: 1.5rem;

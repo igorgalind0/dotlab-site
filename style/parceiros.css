@@ -13,11 +13,37 @@
     margin-top: 20px;
 }
 
+.lista {
+    margin-top: 50px;
+    overflow: hidden;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+}
+
 .parceiros-lista {
     display: flex;
     gap: 100px;
     justify-content: center;
-    margin-top: 40px;
+}
+
+#image-list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: max-content;
+    animation: slide 10s linear infinite;
+}
+
+#image-list li {
+    list-style: none;
+    flex: 0 0 auto;
+}
+
+#image-list img {
+    width: auto;
+    height: 100px;
 }
 
 @media (max-width: 800px) {
@@ -31,5 +57,14 @@
 
     .parceiros-lista {
         gap: 20px;
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
     }
 }

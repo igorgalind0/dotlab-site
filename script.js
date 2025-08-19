@@ -17,16 +17,6 @@ menuMobile.addEventListener('click', () => {
     ulMenu.classList.toggle('ativo');
 });
 
-window.onload = () => {
-    const list = document.getElementById('image-list');
-    const items = lista.querySelectorAll('li');
-
-    items.forEach(item => {
-        const clone = item.cloneNode(true);
-        list.appendChild(clone);
-    });
-}
-
 const linksInternos = document.querySelectorAll('a[href^="#"]');
 
 function scrollToSection(event) {
